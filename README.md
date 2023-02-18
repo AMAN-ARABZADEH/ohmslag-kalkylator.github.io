@@ -4,6 +4,6 @@ I created small calculator for my course in embedded system at university to cal
 
 This is the site you where I hosted using Github public free hosting service page. 
 
-ohmslagkalkylator.github.io
+https://aman-arabzadeh.github.io/ohmslagkalkylator.github.io/
 
 
