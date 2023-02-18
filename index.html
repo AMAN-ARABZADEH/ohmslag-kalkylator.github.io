@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ohms lag-kalkylator</title>
+  </head>
+  <body>
+    <h1>ohms lag-kalkylator</h1>
+    <section id="form">
+      <form>
+        <h2>Ange två värden för att få resten.</h2>
+        <div class="voltage-input">
+          <label for="voltage">Spänning (V)</label>
+          <input
+            type="number"
+            id="voltage"
+            placeholder="Ange spänningsvärde..."
+            name="voltage"
+            required
+          />
+          <label for="voltage-units">Välj ett värde:</label>
+          <select name="voltage-units" id="voltage-units">
+            <option value="voltage">V</option>
+            <option value="kilovolts">kilovolt (kV)</option>
+            <option value="megavolts">Megavolt (MV)</option>
+          </select>
+        </div>
+        <!--  -->
+        <div class="current-input">
+          <label for="current">Ström ( I )</label>
+          <input
+            type="number"
+            id="current"
+            placeholder="Ange strömvärde..."
+            name="current"
+            required
+          />
+          <label for="current-units">Välj ett värde:</label>
+          <select name="current-units" id="current-units">
+            <option value="amps">amper (A)</option>
+            <option value="kiloamps">Kiloamper (kA)</option>
+            <option value="megaamps">Megaamper (MA)</option>
+          </select>
+        </div>
+
+        <div class="resistance-input">
+          <label for="resistance">Motstånd (R)</label>
+          <input
+            type="number"
+            id="resistance"
+            placeholder="Ange motståndsvärde..."
+            name="resistance"
+            required
+          />
+          <label for="resistance-units">Välj ett värde:</label>
+          <select name="resistance-units" id="resistance-units">
+            <option value="ohms">Ω</option>
+            <option value="kiloohms">Kiloohm (kΩ)</option>
+            <option value="megaohms">Megaohm (MΩ)</option>
+          </select>
+        </div>
+        <hr />
+        <br />
+        <button id="btn" type="button">Beräkna</button>
+        <button id="reset" type="reset">Återställ</button>
+        <h3 id="results"></h3>
+        <p id="ohms"></p>
+        <p id="kilo"></p>
+        <p id="mega"></p>
+        <hr />
+      </form>
+    </section>
+
+    <section id="img">
+      <div id="center">
+        <h4>
+          Bilden nedan togs från
+          <a href="https://en.wikipedia.org/wiki/Ohm%27s_law" target="_blank"
+            >wikipedia.</a
+          >
+        </h4>
+        <img src="./ohmslawwiki.png" alt="ohmslawexplained" />
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
